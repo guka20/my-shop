@@ -1,0 +1,70 @@
+.nav-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  .logo span {
+    display: block;
+    &:first-child {
+      letter-spacing: 10px;
+      font-size: bold;
+      font-size: 2rem;
+    }
+    &:last-child {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+  }
+  .search-bar {
+    width: 450px;
+    height: 40px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid rgb(177, 177, 177);
+      font-size: 1rem;
+      border-radius: 40px;
+      padding: 0 20px;
+      color: rgb(100, 100, 100);
+    }
+    .search-icon {
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-40%);
+      background-color: transparent;
+      cursor: pointer;
+      color: rgb(100, 100, 100);
+      font-size: 1.5rem;
+    }
+  }
+  .auth-cart {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      color: rgb(63, 63, 63);
+      background-color: transparent;
+      height: 30.4px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      &.auth {
+        font-size: 2rem;
+      }
+      &.cart {
+        font-size: 1.7rem;
+
+        svg {
+          display: inline;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

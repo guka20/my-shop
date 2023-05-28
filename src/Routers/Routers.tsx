@@ -5,19 +5,9 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { RootLayout } from "../Layouts";
-import { Home, Product } from "../pages";
+import { RootLayout } from "src/Layouts";
+import { Home, Product } from "src/pages";
 export const Routers = () => {
-  // [
-  //   {
-  //     path: "/",
-  //     element: <Home />,
-  //   },
-  //   {
-  //     path: "/product/:productId",
-  //     element: <Product />,
-  //   },
-  // ];
   const routers = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
