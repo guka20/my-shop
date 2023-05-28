@@ -1,11 +1,12 @@
 import { useState } from "react";
-
-import "./App.css";
+import { Routers } from "./Routers/Routers";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div></div>;
+  return (
+    <div>
+      <Routers />
+    </div>
+  );
 }
 
 export default App;
