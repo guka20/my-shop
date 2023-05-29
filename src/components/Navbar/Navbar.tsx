@@ -10,10 +10,10 @@ export const Navbar = () => {
         <span>Customer satisfaction</span>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search product" />
-        <button className="search-icon">
+        <input type="text" id="search" placeholder="Search product" />
+        <label htmlFor="search" className="search-icon">
           <BiSearch />
-        </button>
+        </label>
       </div>
       <div className="auth-cart">
         <button className="auth">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routers } from "./Routers/Routers";
-import "./App.scss";
+import "./style/App.scss";
 function App() {
   return (
     <div className="app">
