@@ -1,23 +1,31 @@
 import "./Navbar.scss";
-import { BiSearch } from "react-icons/bi";
 import { HiUserCircle } from "react-icons/hi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import {IoMdArrowDropdown} from 'react-icons/io'
+import { useState } from "react";
 export const Navbar = () => {
+  const [lang,setLang] = useState("ENGLISH");
+  const [dropDown,setDropDown] = useState(false)
+  const handleChangeLanguage = (langText:string ) =>{
+      setLang(langText)      
+      setDropDown(false)
+  }
   return (
     <nav className="nav-bar">
       <div className="logo">
         <span>PIXORUS</span>
         <span>Customer satisfaction</span>
       </div>
-      <div className="search-bar">
-        <input type="text" id="search" placeholder="Search product" />
-        <label htmlFor="search" className="search-icon">
-          <BiSearch />
-        </label>
-      </div>
       <div className="auth-cart">
         <button className="auth">
           <HiUserCircle />
+        </button>
+        <button className="lang" onClick={()=>setDropDown(!dropDown)} onBlur={()=>setDropDown(false)}>
+          <span>{lang} <IoMdArrowDropdown/></span>
+          <ul className={dropDown?"droped-down":"drop-down"}>
+            <li onClick={()=>handleChangeLanguage("ქართული")}>ქართული</li>
+            <li onClick={()=>handleChangeLanguage("ENGLISH")}>ENGLISH</li>
+          </ul>
         </button>
         <button className="cart">
           <AiOutlineShoppingCart />
