@@ -6,9 +6,7 @@ export const RootLayout = () => {
     <div>
       <Navbar />
       <hr style={{ width: "100%", height: "1px", background: "black" }} />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </div>
   );

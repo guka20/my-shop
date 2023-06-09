@@ -1,0 +1,16 @@
+.swiper {
+  height: 500px;
+  .swiper-wrapper {
+    .banner_image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-pagination-bullet {
+    padding: 2px;
+    &-active {
+      background-color: rgb(237, 59, 0) !important;
+    }
+  }
+}

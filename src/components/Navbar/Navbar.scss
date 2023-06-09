@@ -37,25 +37,26 @@
       &.auth {
         font-size: 2rem;
       }
-      &.lang{
-        font-size:1rem;
-        svg{
+      &.lang {
+        font-size: 1rem;
+        z-index: 9;
+        svg {
           font-size: 2rem;
-          vertical-align:middle;
+          vertical-align: middle;
           margin-left: -7px;
         }
-        ul{
+        ul {
           background-color: white;
           overflow: hidden;
           margin: 0;
           padding: 0;
           transition: max-height 0.5s;
-          li{
-            padding:7px;
-            cursor: pointer; 
+          li {
+            padding: 7px;
+            cursor: pointer;
             position: relative;
-            &::after{
-              content: '';
+            &::after {
+              content: "";
               transition: width 0.5s;
               width: 0;
               height: 1px;
@@ -63,15 +64,15 @@
               position: absolute;
               bottom: 0;
               left: 0;
-            }  
-            &:hover::after{
+            }
+            &:hover::after {
               width: 100%;
-            }         
+            }
           }
-          &.droped-down{
-            max-height:80px;
+          &.droped-down {
+            max-height: 80px;
           }
-          &.drop-down{
+          &.drop-down {
             max-height: 0px;
           }
         }
