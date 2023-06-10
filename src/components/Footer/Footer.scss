@@ -1,28 +1,35 @@
 @import "/src/style/variables.scss";
 .footer {
-  width: 90%;
-  max-width: $max-width;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  div {
-    margin: 0 5px;
-    max-width: 200px;
-    font-family: "Noto Sans Georgian", sans-serif;
-    a {
-      color: black;
-      text-decoration: none;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+  div.footer-teritory {
+    max-width: $max-width;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div {
+      margin: 0 5px;
+      max-width: 200px;
+      font-family: "Noto Sans Georgian", sans-serif;
+      a {
+        color: black;
+        color: white;
 
-      &:hover {
-        color: rgb(124, 177, 177);
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(124, 177, 177);
+        }
       }
     }
-  }
-  hr {
-    margin: 0;
-    width: 100px;
-    height: 1px;
-    background-color: rgb(60, 60, 60);
+    hr {
+      margin: 0;
+      width: 100px;
+      height: 1px;
+      background-color: rgb(60, 60, 60);
+    }
   }
 }

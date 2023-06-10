@@ -21,8 +21,30 @@
   }
   .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(4, 300px);
     justify-content: space-between;
-    gap: 15px;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .product-list-layout {
+    .product-list {
+      grid-template-columns: repeat(3, minmax(200px, 300px));
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .product-list-layout {
+    .product-list {
+      grid-template-columns: repeat(2, minmax(200px, 300px));
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .product-list-layout {
+    .product-list {
+      justify-content: center;
+      grid-template-columns: repeat(1, minmax(200px, 300px));
+    }
   }
 }

@@ -23,7 +23,7 @@
 
   .auth-cart {
     width: 70%;
-    max-width: 220px;
+    max-width: 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,11 +78,9 @@
         }
       }
       &.cart {
-        font-size: 1.7rem;
-
+        font-size: 1rem;
         svg {
-          display: inline;
-          vertical-align: middle;
+          font-size: 1.7rem;
         }
       }
     }

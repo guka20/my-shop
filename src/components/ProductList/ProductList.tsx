@@ -17,67 +17,88 @@ export const ProductList = ({ skip }: ProductListProps) => {
       </div>
       <div className="product-list">
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={1}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={2}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={3}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={4}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={5}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={6}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={7}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={8}
         />
         <ProductCard
-          image="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
           name="Headphones"
           description="An apple mobile which is nothing like apple"
           price={20}
           id={9}
+        />
+        <ProductCard
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          name="Headphones"
+          description="An apple mobile which is nothing like apple"
+          price={20}
+          id={10}
+        />
+        <ProductCard
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          name="Headphones"
+          description="An apple mobile which is nothing like apple"
+          price={20}
+          id={11}
+        />
+        <ProductCard
+          image="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          name="Headphones"
+          description="An apple mobile which is nothing like apple"
+          price={20}
+          id={12}
         />
       </div>
     </div>

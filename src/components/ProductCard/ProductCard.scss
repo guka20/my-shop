@@ -1,6 +1,44 @@
+@import "src/style/variables.scss";
 .product-card {
   width: 100%;
   height: auto;
-  border: 2px solid black;
-  text-align: center;
+  background-color: rgb(250, 249, 246);
+  border-radius: 15px;
+  box-shadow: 0 0 25px 1px rgb(250, 249, 246);
+  img {
+    border-radius: 15px 15px 0 0;
+  }
+  .texture {
+    text-align: center;
+    margin: 0 auto;
+    width: $primary-width;
+    font-size: 1.1rem;
+    h2 {
+      a {
+        color: $primary-black;
+        &:hover {
+          color: rgb(134, 88, 88);
+          text-decoration: underline;
+        }
+      }
+    }
+    span.price {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: rgb(170, 68, 68);
+    }
+
+    .add-to-cart {
+      width: 100%;
+      padding: 10px 0;
+      display: block;
+      font-size: 1.1rem;
+      background-color: rgb(165, 25, 25);
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+  }
 }
