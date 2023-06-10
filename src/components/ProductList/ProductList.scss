@@ -1,0 +1,28 @@
+@import "src/style/variables.scss";
+.product-list-layout {
+  width: $primary-width;
+  max-width: $max-width;
+  margin: 50px auto;
+  .product-list-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    .header {
+      color: rgb(211, 0, 0);
+      font-weight: bolder;
+      font-size: 1.6rem;
+    }
+    .view-all {
+      font-size: 1.3rem;
+      color: rgb(33, 33, 33);
+      text-decoration: underline;
+    }
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
