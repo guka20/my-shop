@@ -1,18 +1,17 @@
 import "./Footer.scss";
+import { useTranslation } from "react-i18next";
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-teritory">
         <div className="company-details">
-          <h2>Company name</h2>
+          <h2>{t("footer.company-name")}</h2>
           <hr />
-          <p>
-            This is B2B website where you can buy any type of product whatever
-            you want. Buy the best products with the best prices
-          </p>
+          <p>{t("footer.company-text")}</p>
         </div>
         <div className="socials">
-          <h2>Socials</h2>
+          <h2>{t("footer.socials")}</h2>
           <hr />
           <p>
             <a href="https://www.facebook.com/" target="_blank">
@@ -36,9 +35,9 @@ export const Footer = () => {
           </p>
         </div>
         <div className="contact">
-          <h2>Contact</h2>
+          <h2>{t("footer.contact")}</h2>
           <hr />
-          <p>Georgia, Batumi.</p>
+          <p>{t("footer.address")}</p>
           <p>info@example.com</p>
           <p>+995 598273500</p>
         </div>

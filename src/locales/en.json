@@ -1,0 +1,20 @@
+{
+  "nav-bar": {
+    "contactUs": "Contact Us",
+    "login-signup": "Login/Signup",
+    "all": "all",
+    "search-here": "Search here"
+  },
+  "footer": {
+    "company-name": "Company name",
+    "company-text": "This is B2B website where you can buy any type of product whatever you want. Buy the best products with the best prices",
+    "socials": "Socials",
+    "contact": "Contact",
+    "address":"Georgia, Batumi"
+  },
+  "products": "Products",
+  "viewAll": "View All",
+
+  "add-to-cart": "Add To Cart",
+  "scroll-to-top": "Scroll To Top"
+}

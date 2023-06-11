@@ -1,0 +1,18 @@
+@import "src/style/variables.scss";
+.scroll-top {
+  width: 90%;
+  max-width: $max-width;
+  padding: 10px 0;
+  background-color: rgb(135, 14, 14);
+  cursor: pointer;
+  color: white;
+  margin: 20px auto;
+  display: block;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  background-color: rgb(165, 25, 25);
+  border-radius: 10px;
+  &:hover {
+    background-color: rgb(101, 6, 6);
+  }
+}

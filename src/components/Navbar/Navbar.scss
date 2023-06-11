@@ -21,9 +21,7 @@
     }
   }
 
-  .auth-cart {
-    width: 70%;
-    max-width: 250px;
+  .extra-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,9 +29,13 @@
       color: rgb(40, 40, 40);
       background-color: transparent;
       height: 30.4px;
-      margin: 0;
+      margin: 0 15px;
       padding: 0;
       cursor: pointer;
+      a {
+        font-size: 1rem;
+        color: black;
+      }
       &.auth {
         font-size: 2rem;
       }
@@ -85,39 +87,54 @@
       }
     }
   }
+  .search-place {
+    input {
+      width: 300px;
+      font-size: 1rem;
+      padding: 5px 5px;
+      border-bottom: 1px solid black;
+      background-color: rgb(243, 243, 243);
+    }
+    .search-button {
+      border: 1px solid rgb(171, 171, 171);
+      border-radius: 0 5px 5px 0;
+      width: 40px;
+      height: 32px;
+      cursor: pointer;
+      background-color: rgb(243, 243, 243);
+    }
+  }
+  .left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: rgb(47, 47, 47);
+    }
+    .login-signup {
+      margin: 0 30px;
+    }
+    select.category-list {
+      height: 35px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      text-transform: capitalize;
+    }
+  }
 }
-
 @media screen and (max-width: 1000px) {
   .nav-bar {
-    .logo span {
-      display: block;
-      &:first-child {
-        letter-spacing: 10px;
-        font-size: bold;
-        font-size: 1.5rem;
-      }
-      &:last-child {
-        font-size: 1rem;
-        letter-spacing: 1px;
-      }
-    }
-    .search-bar {
-      width: 50%;
-      input {
-        max-height: 0px;
-        top: 0;
-        border: none;
-        &:focus {
-          width: auto;
-          top: 60px;
-          left: 0;
-          right: 0;
-          max-height: 40px;
-          border: 1px solid rgb(177, 177, 177);
-          position: fixed;
+    .logo {
+      span {
+        &:first-child {
+          letter-spacing: 10px;
+          font-size: bold;
+          font-size: 1.5rem;
         }
-        &:focus ~ label {
-          display: none;
+        &:last-child {
+          font-size: 1rem;
+          letter-spacing: 1px;
         }
       }
     }
