@@ -91,8 +91,8 @@ export const Navbar = () => {
         </div>
       </nav>
       <hr style={{ width: "100%", height: "1px", backgroundColor: "black" }} />
-      <nav className="nav-bar">
-        <div className="search-place">
+      <nav className="nav-bar second">
+        <div className="search-place ">
           <input
             type="text"
             placeholder={t("nav-bar.search-here") + "..."}

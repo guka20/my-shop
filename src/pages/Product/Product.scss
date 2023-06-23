@@ -3,6 +3,14 @@
   width: $primary-width;
   max-width: $max-width;
   margin: 0 auto;
+  .back {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 212);
+    margin: 10px 0;
+    cursor: pointer;
+  }
   .image-and-texture {
     display: flex;
     .image {
@@ -13,13 +21,35 @@
       font-size: 1.1rem;
       li {
         margin: 15px 0;
+        text-transform: capitalize;
         &.price {
           width: max-content;
           padding: 3px;
           color: white;
-          background-color: rgb(164, 164, 33);
+          background-color: rgb(165, 165, 20);
+        }
+        .add-to-cart {
+          width: 100%;
+          height: 40px;
+          background-color: $primary-red;
+          color: white;
+          font-size: 1.1rem;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 10px;
+          &:hover {
+            background-color: $secondary-red;
+          }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .product-page {
+    .image-and-texture {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

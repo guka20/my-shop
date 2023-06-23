@@ -14,7 +14,11 @@
   },
   "products": "Products",
   "viewAll": "View All",
-
   "add-to-cart": "Add To Cart",
-  "scroll-to-top": "Scroll To Top"
+  "scroll-to-top": "Scroll To Top",
+  "back":"back",
+  "price":"price",
+  "description":"description",
+  "category":"category",
+  "title":"title"
 }
