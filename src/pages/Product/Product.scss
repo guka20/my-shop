@@ -1,0 +1,25 @@
+@import "src/style/variables.scss";
+.product-page {
+  width: $primary-width;
+  max-width: $max-width;
+  margin: 0 auto;
+  .image-and-texture {
+    display: flex;
+    .image {
+      width: 400px;
+      height: 500px;
+    }
+    .texture {
+      font-size: 1.1rem;
+      li {
+        margin: 15px 0;
+        &.price {
+          width: max-content;
+          padding: 3px;
+          color: white;
+          background-color: rgb(164, 164, 33);
+        }
+      }
+    }
+  }
+}

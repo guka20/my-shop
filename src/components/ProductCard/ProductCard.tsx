@@ -3,7 +3,7 @@ import "./ProductCard.scss";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import { useTranslation } from "react-i18next";
-
+import img from "src/assets/banner_img1.jpg";
 import "aos/dist/aos.css";
 Aos.init({
   duration: 500,
@@ -17,7 +17,6 @@ type ProductCardProps = {
   description: string;
 };
 export const ProductCard = ({
-  image,
   name,
   price,
   id,
@@ -26,7 +25,7 @@ export const ProductCard = ({
   const { t } = useTranslation();
   return (
     <div className="product-card" data-aos="zoom-in">
-      <img src={image} alt="Card item" width="100%" height="170px" />
+      <img src={img} alt="Card item" width="100%" height="170px" />
       <div className="texture">
         <h3 className="header">
           <Link to={`/product/${id}`}>{name}</Link>

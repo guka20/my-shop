@@ -1,4 +1,6 @@
 export const fetchData = async (endpoint: string) => {
-  const res = await fetch(`https://dummyjson.com/${endpoint}?limit=12`);
+  console.log(`https://localhost:3001/${endpoint}`);
+  // take=12
+  const res = await fetch(`http://localhost:3001/${endpoint}`);
   return res.json();
 };

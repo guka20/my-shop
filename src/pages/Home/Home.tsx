@@ -17,10 +17,9 @@ export const Home = () => {
   const { category } = useContext(CategoryContext);
   const endPoint =
     category.toLowerCase() === "all" || category.toLowerCase() === ""
-      ? "products"
-      : `products/category/${category}`;
+      ? "products?take=12"
+      : `products?category=${category}&take=12`;
   const { isLoading, isError, data, error } = useFetch(endPoint);
-  console.log(category.toLowerCase());
 
   const handleScroll = () => {
     console.log(window);
@@ -31,7 +30,7 @@ export const Home = () => {
   return (
     <div>
       <Carousel />
-      <ProductList data={data.products} />
+      <ProductList data={data} />
       <button className="scroll-top" onClick={handleScroll} data-aos="zoom-in">
         {t("scroll-to-top")}
       </button>
